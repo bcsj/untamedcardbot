@@ -36,7 +36,7 @@ async def faction(ctx, name : str):
 @bot.command()
 async def card(ctx, *name : str):
     name = ' '.join(name)
-	closest = difflib.get_close_matches(name.lower(), untamed.cards.keys(),1)
+	closest = difflib.get_close_matches(name.lower(), untamed.cards.keys())[0]
 	
     if closest not in untamed.cards.keys():
         msg = 'Could not find card "' + name + '".' + (' Did you mean\n' + '\n'.join(closest) if len(closest) > 0 else '')
