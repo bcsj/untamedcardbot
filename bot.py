@@ -3,8 +3,10 @@ from discord.ext import commands
 from bot_token import token
 import untamed
 import tools
+
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
+import shlex
 
 bot = commands.Bot(command_prefix='!')
 
@@ -44,27 +46,53 @@ async def faction(ctx, name : str):
 @bot.command()
 async def search(ctx, *query : str):
     if query[0].lower() in ["help", "syntax", "guide"]:
-        msg = 'syntax guide:\n' \
+        msg = 'Search Syntax Guide:\n' \
                 + 'f:<faction>\n' \
-                + 't:<type>\n'
+                + 't:<type>\n' \
+                + 'x:<body text>, use \'\' if the search string has spaces. "" doesn\'t work!'
+        await ctx.send(msg)
+        return
+
     q_map = {
         'f': {
             'name': 'faction',
             'type': str,
+            'check': 'fuzz',
             'strictness': 75},
         't': {
             'name': 'type',
             'type': str,
-            'strictness': 95}}
+            'check': 'fuzz',
+            'strictness': 95},
+        'x': {
+            'name': 'text',
+            'type': str,
+            'check': 'substring',
+            'strictness': None}}
 
+    query = ' '.join(query)
+    query = shlex.split(query)
     res = untamed.cards.copy()
     for que in query:
+        if ":" not in que:
+            return
         q,s = que.split(':')
+        if q not in q_map.keys():
+            msg = 'Unknown parameter "'+q+'".'
+            await ctx.send(msg)
+            return
+        
         for key in untamed.cards.keys():
             if key in res.keys():
                 card = res[key]
-                if fuzz.partial_ratio(card[q_map[q]['name']],s) < q_map[q]['strictness']:
-                    del res[key]
+                if q_map[q]['check'] == "fuzz":
+                    if fuzz.partial_ratio(card[q_map[q]['name']],s) < q_map[q]['strictness']:
+                        del res[key]
+                    continue
+                if q_map[q]['check'] == "substring":
+                    if s.lower() not in card[q_map[q]['name']].lower():
+                        del res[key]
+                    continue
 
     n = len(res.keys())
     if n > 1:
