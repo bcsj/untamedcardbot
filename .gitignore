@@ -5,6 +5,9 @@
 ### ignore token-file
 bot_token.py
 
+### vim
+*.swp
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
