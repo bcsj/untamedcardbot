@@ -1,12 +1,24 @@
 # untamed card llibrary
 
-factions = [
-    'rabbit',
-    'panda',
-    'crocodile',
-    'fox',
-    'rhino',
-    'chameleon']
+factions = {
+    'rabbit': {
+        'name': 'Rabbit',
+        'discord_emoji': ':rabbit:'},
+    'panda': {
+        'name': 'Panda',
+        'discord_emoji': ':panda_face:'},
+    'crocodile': {
+        'name': 'Crocodile',
+        'discord_emoji': ':dragon_face:'},
+    'fox': {
+        'name': 'Fox',
+        'discord_emoji': ':wolf:'},
+    'rhino': {
+        'name': 'Rhino',
+        'discord_emoji': ':elephant:'},
+    'chameleon': {
+        'name': 'Chameleon',
+        'discord_emoji': ':frog:'}}
 
 cards = {
     'general greycoat': {

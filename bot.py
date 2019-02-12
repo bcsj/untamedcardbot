@@ -15,16 +15,21 @@ async def on_ready():
 
 @bot.command()
 async def factions(ctx):
+    L = []
+    for key in untamed.factions.keys():
+        L.append(untamed.factions[key]['discord_emoji'] + ' ' + untamed.factions[key]['name'])
     msg = 'Available factions are:\n' \
-        + '\n'.join(untamed.factions)
+        + '\n'.join(L)
     await ctx.send(msg)
     
 @bot.command()
 async def faction(ctx, name : str):
-    if name not in untamed.factions:
+    closest = process.extractOne(name, untamed.factions.keys())
+    if closest[1] < 75:
         msg = 'Could not recognize faction "' + name + '".\n' \
             + 'Type "!factions" for a full list of factions.'
     else:
+        name = closest[0]
         L = []
         for key in untamed.cards.keys():
             if untamed.cards[key]['faction'] == name:
