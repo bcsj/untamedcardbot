@@ -24,7 +24,7 @@ cards = {
     'general greycoat': {
         'name': 'General Greycoat',
         'type': 'animal',
-        'faction': 'rabbit',
+        'faction': 'Rabbit',
         'cost': 5,
         'power': 6,
         'health': 4,
@@ -33,7 +33,7 @@ cards = {
     'whitefur bombardier': {
         'name': 'Whitefur Bombardier',
         'type': 'animal (elite)',
-        'faction': 'rabbit',
+        'faction': 'Rabbit',
         'cost': 2,
         'power': 2,
         'health': 3,
@@ -42,7 +42,7 @@ cards = {
     'war council': {
         'name': 'War Council',
         'type': 'animal (elite)',
-        'faction': 'rabbit',
+        'faction': 'Rabbit',
         'cost': 3,
         'power': 3,
         'health': 5,
@@ -51,7 +51,7 @@ cards = {
     'carrot saber': {
         'name': 'Carrot Saber',
         'type': 'item',
-        'faction': 'rabbit',
+        'faction': 'Rabbit',
         'cost': 3,
         'power': None,
         'health': None,
@@ -60,7 +60,7 @@ cards = {
     'elite infantry': {
         'name': 'Elite Infantry',
         'type': 'animal (elite)',
-        'faction': 'rabbit',
+        'faction': 'Rabbit',
         'cost': 1,
         'power': 2,
         'health': 1,
@@ -69,7 +69,7 @@ cards = {
     'whitefur command': {
         'name': 'Whitefur Command',
         'type': 'stronghold',
-        'faction': 'rabbit',
+        'faction': 'Rabbit',
         'cost': None,
         'power': None,
         'health': 12,
@@ -78,7 +78,7 @@ cards = {
     'blackstone vault': {
         'name': 'Blackstone Vault',
         'type': 'stronghold',
-        'faction': 'panda',
+        'faction': 'Panda',
         'cost': None,
         'power': None,
         'health': 12,
@@ -87,7 +87,7 @@ cards = {
     'ursan gambler': {
         'name': 'Ursan Gambler',
         'type': 'animal (elite)',
-        'faction': 'panda',
+        'faction': 'Panda',
         'cost': 1,
         'power': 1,
         'health': 2,
@@ -96,7 +96,7 @@ cards = {
     'radann, merchant-king': {
         'name': 'Radann, Merchant-King',
         'type': 'animal',
-        'faction': 'panda',
+        'faction': 'Panda',
         'cost': 5,
         'power': 4,
         'health': 6,
@@ -105,7 +105,7 @@ cards = {
     'blackstone broker': {
         'name': 'Blackstone Broker',
         'type': 'animal (elite)',
-        'faction': 'panda',
+        'faction': 'Panda',
         'cost': 2,
         'power': 2,
         'health': 3,
@@ -114,7 +114,7 @@ cards = {
     'oromancer': {
         'name': 'Oromancer',
         'type': 'animal (elite)',
-        'faction': 'panda',
+        'faction': 'Panda',
         'cost': 3,
         'power': 3,
         'health': 4,
@@ -123,7 +123,7 @@ cards = {
     'blackstone treasury': {
         'name': 'Blackstone Treasury',
         'type': 'item',
-        'faction': 'panda',
+        'faction': 'Panda',
         'cost': 3,
         'power': None,
         'health': None,
@@ -132,7 +132,7 @@ cards = {
     'goldscale temple': {
         'name': 'Goldscale Temple',
         'type': 'Stronghold',
-        'faction': 'crocodile',
+        'faction': 'Crocodile',
         'cost': None,
         'power': None,
         'health': 12,
@@ -141,7 +141,7 @@ cards = {
     'toothblade magus': {
         'name': 'Toothblade Magus',
         'type': 'animal (elite)',
-        'faction': 'crocodile',
+        'faction': 'Crocodile',
         'cost': 2,
         'power': 3,
         'health': 2,
@@ -150,7 +150,7 @@ cards = {
     'high-priestess mekhet': {
         'name': 'High-Priestess Mekhet',
         'type': 'animal',
-        'faction': 'crocodile',
+        'faction': 'Crocodile',
         'cost': 4,
         'power': 5,
         'health': 5,
@@ -159,7 +159,7 @@ cards = {
     'goldscale archer': {
         'name': 'Goldscale Archer',
         'type': 'animal (elite)',
-        'faction': 'crocodile',
+        'faction': 'Crocodile',
         'cost': 1,
         'power': 2,
         'health': 1,
@@ -168,7 +168,7 @@ cards = {
     'toothblade chosen': {
         'name': 'Toothblade Chosen',
         'type': 'animal (elite)',
-        'faction': 'crocodile',
+        'faction': 'Crocodile',
         'cost': 4,
         'power': 3,
         'health': 5,
@@ -177,7 +177,7 @@ cards = {
     'goldscale amulet': {
         'name': 'Goldscale Amulet',
         'type': 'item',
-        'faction': 'crocodile',
+        'faction': 'Crocodile',
         'cost': 1,
         'power': None,
         'health': None,
@@ -186,7 +186,7 @@ cards = {
     'spiritsong lodge': {
         'name': 'Spiritsong Lodge',
         'type': 'stronghold',
-        'faction': 'rhino',
+        'faction': 'Rhino',
         'cost': None,
         'power': None,
         'health': 12,
@@ -195,7 +195,7 @@ cards = {
     'rockhide berserker': {
         'name': 'Rockhide Berserker',
         'type': 'animal (elite)',
-        'faction': 'rhino',
+        'faction': 'Rhino',
         'cost': 2,
         'power': 2,
         'health': 3,
@@ -204,7 +204,7 @@ cards = {
     'wildcaller mo\'gara': {
         'name': 'Wildcaller Mo\'Gara',
         'type': 'animal',
-        'faction': 'rhino',
+        'faction': 'Rhino',
         'cost': 3,
         'power': 3,
         'health': 2,
@@ -213,7 +213,7 @@ cards = {
     'rockhide defender': {
         'name': 'Rockhide Defender',
         'type': 'animal (elite)',
-        'faction': 'rhino',
+        'faction': 'Rhino',
         'cost': 3,
         'power': 2,
         'health': 4,
@@ -221,8 +221,8 @@ cards = {
         'img': None},
     'the bonehammer': {
         'name': 'The Bonehammer',
-        'type': 'item',
-        'faction': 'rhino',
+        'type': 'item (elite)',
+        'faction': 'Rhino',
         'cost': 4,
         'power': None,
         'health': None,
@@ -231,7 +231,7 @@ cards = {
     'war drums': {
         'name': 'War Drums',
         'type': 'item',
-        'faction': 'rhino',
+        'faction': 'Rhino',
         'cost': 1,
         'power': None,
         'health': None,
@@ -240,7 +240,7 @@ cards = {
     'the dark tower': {
         'name': 'The Dark Tower',
         'type': 'stronghold',
-        'faction': 'fox',
+        'faction': 'Fox',
         'cost': None,
         'power': None,
         'health': 12,
@@ -249,7 +249,7 @@ cards = {
     'spymaster rohana': {
         'name': 'Spymaster Rohana',
         'type': 'animal',
-        'faction': 'fox',
+        'faction': 'Fox',
         'cost': 4,
         'power': 3,
         'health': 4,
@@ -258,7 +258,7 @@ cards = {
     'reinhard thief': {
         'name': 'Reinhard Theif',
         'type': 'animal (elite)',
-        'faction': 'fox',
+        'faction': 'Fox',
         'cost': 1,
         'power': 1,
         'health': 2,
@@ -267,7 +267,7 @@ cards = {
     'scheming seer': {
         'name': 'Scheming Seer',
         'type': 'animal (elite)',
-        'faction': 'fox',
+        'faction': 'Fox',
         'cost': 3,
         'power': 3,
         'health': 4,
@@ -275,8 +275,8 @@ cards = {
         'img': None},
     'spyglass': {
         'name': 'Spyglass',
-        'type': 'itewm (elite)',
-        'faction': 'fox',
+        'type': 'item (elite)',
+        'faction': 'Fox',
         'cost': 0,
         'power': None,
         'health': None,
@@ -285,7 +285,7 @@ cards = {
     'hidden blade': {
         'name': 'Hidden Blade',
         'type': 'item',
-        'faction': 'fox',
+        'faction': 'Fox',
         'cost': 2,
         'power': None,
         'health': None,
@@ -294,7 +294,7 @@ cards = {
     'the laboratory': {
         'name': 'The Laboratory',
         'type': 'stronghold',
-        'faction': 'chameleon',
+        'faction': 'Chameleon',
         'cost': None,
         'power': None,
         'health': 12,
@@ -303,7 +303,7 @@ cards = {
     'dr. dolores': {
         'name': 'Dr. Dolores',
         'type': 'animal',
-        'faction': 'chameleon',
+        'faction': 'Chameleon',
         'cost': 4,
         'power': 4,
         'health': 5,
@@ -312,7 +312,7 @@ cards = {
     'shiftscale assassin': {
         'name': 'Shiftscale Assassin',
         'type': 'animal (elite)',
-        'faction': 'chameleon',
+        'faction': 'Chameleon',
         'cost': 1,
         'power': 1,
         'health': 2,
@@ -321,7 +321,7 @@ cards = {
     'lab deceptionist': {
         'name': 'Lab Deceptionist',
         'type': 'animal (elite)',
-        'faction': 'chameleon',
+        'faction': 'Chameleon',
         'cost': 2,
         'power': 3,
         'health': 2,
@@ -330,7 +330,7 @@ cards = {
     'expert alchemist': {
         'name': '"Expert" Alchemist',
         'type': 'animal (elite)',
-        'faction': 'chameleon',
+        'faction': 'Chameleon',
         'cost': 3,
         'power': 2,
         'health': 5,
@@ -339,7 +339,7 @@ cards = {
     'vile concoction': {
         'name': 'Vile Concoction',
         'type': 'item',
-        'faction': 'chameleon',
+        'faction': 'Chameleon',
         'cost': 3,
         'power': None,
         'health': None,

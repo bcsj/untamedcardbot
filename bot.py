@@ -2,6 +2,8 @@ from discord.ext import commands
 
 from bot_token import token
 import untamed
+import tools
+from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
 bot = commands.Bot(command_prefix='!')
@@ -34,24 +36,61 @@ async def faction(ctx, name : str):
         for key in untamed.cards.keys():
             if untamed.cards[key]['faction'] == name:
                 card = untamed.cards[key]
-                L.append(card['name'] + ', ' + card['type'])
+                L.append(tools.print_card_short(card))
         msg = name + ' faction contains the cards:\n' \
             + '\n'.join(L)
     await ctx.send(msg)
 
 @bot.command()
+async def search(ctx, *query : str):
+    if query[0].lower() in ["help", "syntax", "guide"]:
+        msg = 'syntax guide:\n' \
+                + 'f:<faction>\n' \
+                + 't:<type>\n'
+    q_map = {
+        'f': {
+            'name': 'faction',
+            'type': str,
+            'strictness': 75},
+        't': {
+            'name': 'type',
+            'type': str,
+            'strictness': 95}}
+
+    res = untamed.cards.copy()
+    for que in query:
+        q,s = que.split(':')
+        for key in untamed.cards.keys():
+            if key in res.keys():
+                card = res[key]
+                if fuzz.partial_ratio(card[q_map[q]['name']],s) < q_map[q]['strictness']:
+                    del res[key]
+
+    n = len(res.keys())
+    if n > 1:
+        L = []
+        for key in res:
+            card = res[key]
+            L.append(tools.print_card_short(card))
+            msg = str(n) + ' hits! Matches:\n' \
+                + '\n'.join(L)
+    elif len(res.keys()) == 1:
+        key = list(res.keys())[0]
+        card = res[key]
+        msg = '1 hit! Match:\n' + tools.print_card(card)
+    else:
+        msg = 'No matching cards'
+    await ctx.send(msg)
+
+@bot.command()
 async def card(ctx, *name : str):
     name = ' '.join(name)
-    closest = process.extractOne(name, untamed.cards.keys())
-    if closest[1] < 75:
+    closest = process.extractOne(name.lower(), untamed.cards.keys())
+    if closest[1] < 75 and name.lower() != "what the hell":
         msg = 'Could not find card "' + name + '"\n' + ' Did you mean ' + closest[0]
     else:
         card = untamed.cards[closest[0]]
-        msg = card['name'] + ', ' + card['faction'] + ' faction' + '\n' \
-              + card['type'] + (', cost: ' + str(card['cost']) if card['cost'] is not None else '') + '\n' \
-              + ('Power: ' + str(card['power']) + ', ' if card['power'] is not None else '') \
-              + ('Health: ' + str(card['health']) + '\n' if card['health'] is not None else '') \
-              + card['text']        
+        msg = tools.print_card(card)      
     await ctx.send(msg)
 
 bot.run(token)
