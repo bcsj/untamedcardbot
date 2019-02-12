@@ -6,7 +6,7 @@ factions = [
     'crocodile',
     'fox',
     'rhino',
-    'cameleon']
+    'chameleon']
 
 cards = {
     'general greycoat': {
@@ -282,7 +282,7 @@ cards = {
     'the laboratory': {
         'name': 'The Laboratory',
         'type': 'stronghold',
-        'faction': 'cameleon',
+        'faction': 'chameleon',
         'cost': None,
         'power': None,
         'health': 12,
@@ -291,7 +291,7 @@ cards = {
     'dr. dolores': {
         'name': 'Dr. Dolores',
         'type': 'animal',
-        'faction': 'cameleon',
+        'faction': 'chameleon',
         'cost': 4,
         'power': 4,
         'health': 5,
@@ -300,7 +300,7 @@ cards = {
     'shiftscale assassin': {
         'name': 'Shiftscale Assassin',
         'type': 'animal (elite)',
-        'faction': 'cameleon',
+        'faction': 'chameleon',
         'cost': 1,
         'power': 1,
         'health': 2,
@@ -309,7 +309,7 @@ cards = {
     'lab deceptionist': {
         'name': 'Lab Deceptionist',
         'type': 'animal (elite)',
-        'faction': 'cameleon',
+        'faction': 'chameleon',
         'cost': 2,
         'power': 3,
         'health': 2,
@@ -318,7 +318,7 @@ cards = {
     'expert alchemist': {
         'name': '"Expert" Alchemist',
         'type': 'animal (elite)',
-        'faction': 'cameleon',
+        'faction': 'chameleon',
         'cost': 3,
         'power': 2,
         'health': 5,
@@ -327,7 +327,7 @@ cards = {
     'vile concoction': {
         'name': 'Vile Concoction',
         'type': 'item',
-        'faction': 'cameleon',
+        'faction': 'chameleon',
         'cost': 3,
         'power': None,
         'health': None,

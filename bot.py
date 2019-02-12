@@ -29,7 +29,7 @@ async def faction(ctx, name : str):
         for key in untamed.cards.keys():
             if untamed.cards[key]['faction'] == name:
                 card = untamed.cards[key]
-                L.append(key + ', ' + card['type'])
+                L.append(card['name'] + ', ' + card['type'])
         msg = name + ' faction contains the cards:\n' \
             + '\n'.join(L)
     await ctx.send(msg)
