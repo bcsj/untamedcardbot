@@ -3,22 +3,22 @@
 factions = {
     'rabbit': {
         'name': 'Rabbit',
-        'discord_emoji': ':rabbit:'},
+        'discord_emoji': '<:untamedrabbit:544906418436964353>'}, #':rabbit:'},
     'panda': {
         'name': 'Panda',
-        'discord_emoji': ':panda_face:'},
+        'discord_emoji': '<:untamedpanda:544906418394759179>'}, #':panda_face:'},
     'crocodile': {
         'name': 'Crocodile',
-        'discord_emoji': ':dragon_face:'},
+        'discord_emoji': '<:untamedcrocodile:544906418705399828>'}, #':crocodile:'},
     'fox': {
         'name': 'Fox',
-        'discord_emoji': ':wolf:'},
+        'discord_emoji': '<:untamedfox:544906418843680768>'}, #':fox:'},
     'rhino': {
         'name': 'Rhino',
-        'discord_emoji': ':elephant:'},
+        'discord_emoji': '<:untamedrhino:544906418671583233>'}, #':rhino:'},
     'chameleon': {
         'name': 'Chameleon',
-        'discord_emoji': ':frog:'}}
+        'discord_emoji': '<:untamedchameleon:544906418936086558>'}}#':frog:'}}
 
 cards = {
     'general greycoat': {
