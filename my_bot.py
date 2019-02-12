@@ -36,11 +36,12 @@ async def faction(ctx, name : str):
 @bot.command()
 async def card(ctx, *name : str):
     name = ' '.join(name)
-    if name not in untamed.cards.keys():
-        L = difflib.get_close_matches(name, untamed.cards.keys())
-        msg = 'Could not find card "' + name + '".' + (' Did you mean\n' + '\n'.join(L) if len(L) > 0 else '')
+	closest = difflib.get_close_matches(name.lower(), untamed.cards.keys(),1)
+	
+    if closest not in untamed.cards.keys():
+        msg = 'Could not find card "' + name + '".' + (' Did you mean\n' + '\n'.join(closest) if len(closest) > 0 else '')
     else:
-        card = untamed.cards[name]
+		card = untamed.cards[closest]
         msg = card['name'] + ', ' + card['faction'] + ' faction' + '\n' \
               + card['type'] + (', cost: ' + str(card['cost']) if card['cost'] is not None else '') + '\n' \
               + ('Power: ' + str(card['power']) + ', ' if card['power'] is not None else '') \
