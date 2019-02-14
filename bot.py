@@ -85,6 +85,7 @@ async def faction(ctx, name : str):
 # Searches for cards satisfying the parameters
 @bot.command()
 async def search(ctx, *query : str):
+    # Display syntax guide
     if query[0].lower() in ["help", "syntax", "guide"]:
         msg = 'Search Syntax Guide:\n' \
                 + 'f:<faction>\n' \
@@ -93,6 +94,7 @@ async def search(ctx, *query : str):
         await ctx.send(msg)
         return
 
+    # Query code mapper
     q_map = {
         'f': {
             'name': 'faction',
@@ -110,6 +112,7 @@ async def search(ctx, *query : str):
             'check': 'substring',
             'strictness': 100}}
 
+    # Process query
     query = ' '.join(query)
     query = shlex.split(query)
     res = untamed.cards.copy()
@@ -134,6 +137,7 @@ async def search(ctx, *query : str):
                         del res[key]
                     continue
 
+    # Display results
     n = len(res.keys())
     if n > 1:
         L = []
