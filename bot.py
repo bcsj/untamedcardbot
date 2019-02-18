@@ -37,7 +37,7 @@ async def who(ctx, *cmd):
 async def what(ctx, *cmd):
     # Easter Egg
     if ' '.join(cmd).lower() == "the hell":
-        await card.callback(ctx, 'elite infantry')
+        await card.callback(ctx, 'whitefur infantry')
         return
 
     i = 1 if cmd[0].lower() == 'is' else 0
@@ -163,6 +163,9 @@ async def card(ctx, *name : str):
     if closest[1] < 75 and name.lower() != "what the hell":
         msg = 'Could not find card "' + name + '"\n' \
             + 'Did you mean "' + closest[0] + '"'
+    elif name.lower() == "what the hell":
+        card = untamed.cards['whitefur infantry']
+        msg = tools.print_card(card)
     else:
         card = untamed.cards[closest[0]]
         msg = tools.print_card(card)      
