@@ -17,6 +17,6 @@ def print_card(card):
     msg = card['name'] + ', ' + factionemoji(card) + ' ' + card['faction'] + ' faction' + '\n' \
             + card['type'] + (', ' + cost_emoji + ' ' + str(card['cost']) if card['cost'] is not None else '')  \
             + (', ' + attk_emoji + ' ' + str(card['power']) + ', ' if card['power'] is not None else '') \
-            + (defn_emoji + ' ' + str(card['health']) + '\n' if card['health'] is not None else '') \
+            + (defn_emoji + ' ' + str(card['health']) if card['health'] is not None else '') + '\n' \
             + card['text']
     return msg
