@@ -13,6 +13,9 @@ import shlex
 # Initialize bot
 bot = commands.Bot(command_prefix='!')
 
+# Remove default help
+bot.remove_command('help')
+
 # Server-side notification
 @bot.event
 async def on_ready():
@@ -21,6 +24,21 @@ async def on_ready():
     print(bot.user.id)
     print('------')
 
+# Help command
+@bot.command()
+async def commands(ctx,*cmd):
+    msg = '```\n' \
+        + 'Type "!<command> <args>" to invoke a command.\n' \
+        + 'For example: try typing "!card Radann".\n\n' \
+        + 'This is a list of available commands:\n' \
+        + ' - card <name>: looks up a card by it\'s name.\n' \
+        + ' - factions: lists all animal factions.\n' \
+        + ' - faction <name>: lists cards on a particular faction.\n' \
+        + ' - search <query>: searches for cards. Type "!search syntax" for more info.\n' \
+        + ' - what <keyword>: returns rules information about a keyword.\n' \
+        + ' - commands: returns this message.\n' \
+        + '```'
+    await ctx.send(msg)
 
 # Silly function
 @bot.command()
@@ -87,10 +105,14 @@ async def faction(ctx, name : str):
 async def search(ctx, *query : str):
     # Display syntax guide
     if query[0].lower() in ["help", "syntax", "guide"]:
-        msg = 'Search Syntax Guide:\n' \
-                + 'f:<faction>\n' \
-                + 't:<type>\n' \
-                + 'x:<body text>, use \'\' if the search string has spaces. "" doesn\'t work!'
+        msg = '```\n' \
+            + 'Search Syntax Guide:\n' \
+            + ' f:<faction>\n' \
+            + ' t:<type>\n' \
+            + ' x:<body text>, use \'\' if the search string has spaces. "" doesn\'t work!\n' \
+            + '\n' \
+            + 'For example try "!search x:\'last words\'" or "!search f:rabbit t:item".\n' \
+            + '```'
         await ctx.send(msg)
         return
 
