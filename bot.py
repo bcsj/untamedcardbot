@@ -37,7 +37,20 @@ async def commands(ctx,*cmd):
         + ' - search <query>: searches for cards. Type "!search syntax" for more info.\n' \
         + ' - what <keyword>: returns rules information about a keyword.\n' \
         + ' - commands: returns this message.\n' \
+        + '\n' \
+        + 'This bot was made by bcsj.\n' \
+        + 'The code is available at: https://github.com/bcsj/untamedcardbot\n' \
         + '```'
+    await ctx.send(msg)
+
+@bot.command()
+async def help(ctx,*cmd):
+    msg = 'Use \'!commands\' instead.'
+    await ctx.send(msg)
+
+@bot.command()
+async def credits(ctx,*cmd):
+    msg = untamed.credits
     await ctx.send(msg)
 
 # Silly function
@@ -65,7 +78,7 @@ async def what(ctx, *cmd):
         msg = 'Could not recognize term "' + cmd + '".\n' \
             + 'Did you mean "' + closest[0] + '"'
     else:
-        msg = untamed.terms[closest[0]]
+        msg = closest[0].capitalize() + ' - ' + untamed.terms[closest[0]]
     await ctx.send(msg)
 
 
