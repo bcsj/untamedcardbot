@@ -7,11 +7,11 @@ terms = {
     'guard': 'Guard - Card Ability. This Animal must first be defeated before other Animals or Strongholds can be attacked. When multiple Animals with Guard are on the board, the attacker may choose which one of them to attack. Guard does not affect Items and Animal/Stronghold card effects.',
     'item': 'Item - Card type. Items have a single use effect and are placed into their owner’s Stronghold after they are resolved.',
     'last words': 'Last Words - Card Ability. This effect happens when an Animal is defeated. A player can decide not to use the Last Words effect.',
-    'power': 'Power - Resource. ({P}) Any card that is placed face down in a player’s Power Area (on the left side of their Stronghold). Each card face down card in a player\'s Power Area counts as 1 Power. Players may only play a single card as a Power per turn and can have a maximum of 5 Power.',
+    'power': 'Power - Resource. (<:cost:544901369518096384>) Any card that is placed face down in a player’s Power Area (on the left side of their Stronghold). Each card face down card in a player\'s Power Area counts as 1 Power. Players may only play a single card as a Power per turn and can have a maximum of 5 Power.',
     'rally': 'Rally - An indicator on a card. A player checks if the card(s) they draw when their Stronghold is defeated has the Rally indicator on it. If so, that card may immediately be played without having to pay the card’s Power Cost.',
     'reveal': 'Reveal - Card ability. When a card states to reveal a card, the player shows the card to the other player, then puts the card back where it came from. If multiple cards were revealed from the top of a player’s deck, put them back in the same order.',
     'surge': 'Surge - Card Ability. Animals with this ability come into play in the Ready Position and may immediately be used the turn it’s played to attack the opponents Animals. It cannot however attack the opponent’s Stronghold on the same turn it was played.',
-    'support': 'Support - Resource. ({S}) A card that is discarded, an Animal that is defeated or an Item that has been used is placed in your Support Area (right side of your Stronghold). These can be used to pay for Support ({S}) abilities on cards. Cards that have been used to pay for Support costs are removed from the game afterwards.'}
+    'support': 'Support - Resource. (:paw_prints:) A card that is discarded, an Animal that is defeated or an Item that has been used is placed in your Support Area (right side of your Stronghold). These can be used to pay for Support (:paw_prints:) abilities on cards. Cards that have been used to pay for Support costs are removed from the game afterwards.'}
 
 credits = 'Game Design: Jeremy Falger, Milan Lefferts\n' \
         + 'Artists: Joe A. Howard, Andrew Soman, Julien Vandois, David Tenorio, Baukje Jagersma, Ilse Harting, Andrea Sodaro, Alex Shiga, Albert Bruun, Radu Mihai, Regis Torres\n' \
@@ -59,7 +59,7 @@ cards = {
         'cost': None,
         'power': None,
         'health': 7,
-        'text': 'Pay 2 {S}: Deal 1 damage to an Animal OR Stronghold.',
+        'text': 'Pay 2 :paw_prints:: Deal 1 damage to an Animal OR Stronghold.',
         'img': None},
     'general greycoat': {
         'name': 'General Greycoat',
@@ -69,7 +69,7 @@ cards = {
         'cost': 5,
         'power': 6,
         'health': 4,
-        'text': 'ARRIVE: Choose one: Give another Animal 2 Fury OR Exhaust an Animal. You may pay 3 {S} to do both.',
+        'text': 'ARRIVE: Choose one: Give another Animal 2 Fury OR Exhaust an Animal. You may pay 3 :paw_prints: to do both.',
         'img': None},
     'war council': {
         'name': 'War Council',
@@ -89,7 +89,7 @@ cards = {
         'cost': 1,
         'power': 1,
         'health': 2,
-        'text': 'ARRIVE: This gains SURGE OR this gains 1 Fury. You may pay 2 {S} to do both.',
+        'text': 'ARRIVE: This gains SURGE OR this gains 1 Fury. You may pay 2 :paw_prints: to do both.',
         'img': None},
     'whitefur artillery': {
         'name': 'Whitefur Artillery',
@@ -99,7 +99,7 @@ cards = {
         'cost': 2,
         'power': 2,
         'health': 3,
-        'text': 'ARRIVE: Deal 1 Damage to an Animal OR to a Stronghold. You may pay 2 {S} to do both.',
+        'text': 'ARRIVE: Deal 1 Damage to an Animal OR to a Stronghold. You may pay 2 :paw_prints: to do both.',
         'img': None},
     'carrot saber': {
         'name': 'Carrot Saber',
@@ -119,7 +119,7 @@ cards = {
         'cost': None,
         'power': None,
         'health': 7,
-        'text': 'Pay 3 {S}: Draw a card.',
+        'text': 'Pay 3 :paw_prints:: Draw a card.',
         'img': None},
     'ursan gambler': {
         'name': 'Ursan Gambler',
@@ -139,7 +139,7 @@ cards = {
         'cost': 5,
         'power': 4,
         'health': 6,
-        'text': 'You may pay 5 {S} instead of paying this card\'s Power cost.\nLAST WORDS: Trigger your Stronghold ability for free. This does not count as a use of your Stronghold ability this turn.',
+        'text': 'You may pay 5 :paw_prints: instead of paying this card\'s Power cost.\nLAST WORDS: Trigger your Stronghold ability for free. This does not count as a use of your Stronghold ability this turn.',
         'img': None},
     'blackstone broker': {
         'name': 'Blackstone Broker',
@@ -169,7 +169,7 @@ cards = {
         'cost': 4,
         'power': None,
         'health': None,
-        'text': 'You may Pay 5 {S} instead of paying this card\'s Power Cost.\nDraw 2 cards. Exhaust an enemy Animal.',
+        'text': 'You may Pay 5 :paw_prints: instead of paying this card\'s Power Cost.\nDraw 2 cards. Exhaust an enemy Animal.',
         'img': None},
     'goldscale temple': {
         'name': 'Goldscale Temple',
@@ -179,7 +179,7 @@ cards = {
         'cost': None,
         'power': None,
         'health': 7,
-        'text': 'Pay 3 {S}: Trigger the LAST WORDS ability of a friendly Animal in play or in your Support Area.',
+        'text': 'Pay 3 :paw_prints:: Trigger the LAST WORDS ability of a friendly Animal in play or in your Support Area.',
         'img': None},
     'toothblade magus': {
         'name': 'Toothblade Magus',
@@ -189,7 +189,7 @@ cards = {
         'cost': 2,
         'power': 2,
         'health': 2,
-        'text': 'ARRIVE: You may pay 3 {S} to give this SURGE.\nLAST WORDS: Deal 2 Damage to a Stronghold.',
+        'text': 'ARRIVE: You may pay 3 :paw_prints: to give this SURGE.\nLAST WORDS: Deal 2 Damage to a Stronghold.',
         'img': None},
     'high-priestess mekhet': {
         'name': 'High-Priestess Mekhet',
@@ -199,7 +199,7 @@ cards = {
         'cost': 4,
         'power': 5,
         'health': 5,
-        'text': 'ARRIVE: You may pay 2 {S} to Exhaust an Animal.\nLAST WORDS: Draw a card.',
+        'text': 'ARRIVE: You may pay 2 :paw_prints: to Exhaust an Animal.\nLAST WORDS: Draw a card.',
         'img': None},
     'goldscale archer': {
         'name': 'Goldscale Archer',
@@ -229,7 +229,7 @@ cards = {
         'cost': 1,
         'power': None,
         'health': None,
-        'text': 'Remove a card from your Support Area from the game and trigger it\'s LAST WORDS ability. You may pay 3 {S} to repeat this with a second card in your Support Area.',
+        'text': 'Remove a card from your Support Area from the game and trigger it\'s LAST WORDS ability. You may pay 3 :paw_prints: to repeat this with a second card in your Support Area.',
         'img': None},
     'spiritsong lodge': {
         'name': 'Spiritsong Lodge',
@@ -239,7 +239,7 @@ cards = {
         'cost': None,
         'power': None,
         'health': 7,
-        'text': 'Pay 2 {S}: Give 1 Fury to an Animal.',
+        'text': 'Pay 2 :paw_prints:: Give 1 Fury to an Animal.',
         'img': None},
     'rockhide berserker': {
         'name': 'Rockhide Berserker',
@@ -259,7 +259,7 @@ cards = {
         'cost': 3,
         'power': 3,
         'health': 3,
-        'text': 'ARRIVE: Move 1 damage from an Animal to another Animal. If this effect defeats the target, this gains 1 Fury. You may pay 2 {S} to move 2 damage instead.',
+        'text': 'ARRIVE: Move 1 damage from an Animal to another Animal. If this effect defeats the target, this gains 1 Fury. You may pay 2 :paw_prints: to move 2 damage instead.',
         'img': None},
     'rockhide defender': {
         'name': 'Rockhide Defender',
@@ -279,7 +279,7 @@ cards = {
         'cost': 4,
         'power': None,
         'health': None,
-        'text': 'You may pay 5 {S} instead of paying this card\'s Power cost.\nDeal 2 damage to up to 2 Animals each.',
+        'text': 'You may pay 5 :paw_prints: instead of paying this card\'s Power cost.\nDeal 2 damage to up to 2 Animals each.',
         'img': None},
     'war drums': {
         'name': 'War Drums',
@@ -289,7 +289,7 @@ cards = {
         'cost': 1,
         'power': None,
         'health': None,
-        'text': 'You may pay 2 {S} instead of paying this card\'s Power cost.\nAll Animals you play this turn comes into play with 1 Fury.',
+        'text': 'You may pay 2 :paw_prints: instead of paying this card\'s Power cost.\nAll Animals you play this turn comes into play with 1 Fury.',
         'img': None},
     'the black market': {
         'name': 'The Black Market',
@@ -299,7 +299,7 @@ cards = {
         'cost': None,
         'power': None,
         'health': 7,
-        'text': 'Pay 2 {S}: Reveal the top card of your deck. If it\'s an Animal, give an Animal -2 Atack until end of turn. If it\'s an Item, draw it.',
+        'text': 'Pay 2 :paw_prints:: Reveal the top card of your deck. If it\'s an Animal, give an Animal -2 Atack until end of turn. If it\'s an Item, draw it.',
         'img': None},
     'spymaster rohana': {
         'name': 'Spymaster Rohana',
@@ -319,7 +319,7 @@ cards = {
         'cost': 1,
         'power': 2,
         'health': 1,
-        'text': 'ARRIVE: You may pay 3 {S} to move all Fury from an Animal to this card.\nSURGE',
+        'text': 'ARRIVE: You may pay 3 :paw_prints: to move all Fury from an Animal to this card.\nSURGE',
         'img': None},
     'scheming seer': {
         'name': 'Scheming Seer',
@@ -329,7 +329,7 @@ cards = {
         'cost': 3,
         'power': 3,
         'health': 4,
-        'text': 'ARRIVE: You may pay 2 {S} to give an Animal -2 Attack until end of turn.\nLAST WORDS: Put a card from your Support Area on top of your deck.',
+        'text': 'ARRIVE: You may pay 2 :paw_prints: to give an Animal -2 Attack until end of turn.\nLAST WORDS: Put a card from your Support Area on top of your deck.',
         'img': None},
     'spyglass': {
         'name': 'Spyglass',
@@ -344,12 +344,12 @@ cards = {
     'hidden blade': {
         'name': 'Hidden Blade',
         'type': 'item',
-        'rally', False,
+        'rally': False,
         'faction': 'Fox',
         'cost': 3,
         'power': None,
         'health': None,
-        'text': 'Choose a friendly Animal. You may pay 4 {S} to give that Animal gains +2 Attack until end of turn. Deal damage equal to that Animal\'s Attack to another Animal.',
+        'text': 'Choose a friendly Animal. You may pay 4 :paw_prints: to give that Animal gains +2 Attack until end of turn. Deal damage equal to that Animal\'s Attack to another Animal.',
         'img': None},
     'the laboratory': {
         'name': 'The Laboratory',
@@ -359,7 +359,7 @@ cards = {
         'cost': None,
         'power': None,
         'health': 7,
-        'text': 'Pay 2 {S}: Replace 1 Damage on an Animal with 1 Fury.',
+        'text': 'Pay 2 :paw_prints:: Replace 1 Damage on an Animal with 1 Fury.',
         'img': None},
     'dr. dolores': {
         'name': 'Dr. Dolores',
@@ -369,7 +369,7 @@ cards = {
         'cost': 4,
         'power': 4,
         'health': 5,
-        'text': 'ARRIVE: You may pay 4 {S} to play a card with cost 3 or less from your hand without paying it\'s Power cost.',
+        'text': 'ARRIVE: You may pay 4 :paw_prints: to play a card with cost 3 or less from your hand without paying it\'s Power cost.',
         'img': None},
     'shiftscale assassin': {
         'name': 'Shiftscale Assassin',
@@ -379,7 +379,7 @@ cards = {
         'cost': 1,
         'power': 1,
         'health': 2,
-        'text': 'ARRIVE: You may pay 1 {S} to Exhaust an Animal.\nThis has +1 Attack during your turn.',
+        'text': 'ARRIVE: You may pay 1 :paw_prints: to Exhaust an Animal.\nThis has +1 Attack during your turn.',
         'img': None},
     'lab deceptionist': {
         'name': 'Lab Deceptionist',
@@ -389,7 +389,7 @@ cards = {
         'cost': 2,
         'power': 2,
         'health': 2,
-        'text': 'ARRIVE: You may pay 2 {S} to choose an Animal with Fury on it. This gains Fury equal to that of the chosen Animal.\nSURGE.',
+        'text': 'ARRIVE: You may pay 2 :paw_prints: to choose an Animal with Fury on it. This gains Fury equal to that of the chosen Animal.\nSURGE.',
         'img': None},
     'expert alchemist': {
         'name': '"Expert" Alchemist',
@@ -409,7 +409,7 @@ cards = {
         'cost': 1,
         'power': None,
         'health': None,
-        'text': 'Deal 1 damage to an Animal.\nYou may pay 2 {S} to also deal 2 damage to a different Animal.',
+        'text': 'Deal 1 damage to an Animal.\nYou may pay 2 :paw_prints: to also deal 2 damage to a different Animal.',
         'img': None},
 	'the shipyard': {
 		'name': 'The Shipyard',
@@ -419,7 +419,7 @@ cards = {
 		'cost': None,
 		'power': None,
 		'health': 7,
-		'text': 'Pay 2 {S}: Place a card with Power cost 1 or less from your Support Area into your hand.',
+		'text': 'Pay 2 :paw_prints:: Place a card with Power cost 1 or less from your Support Area into your hand.',
 		'img': None},
 	'the rat king': {
 		'name': 'The Rat "King"',
@@ -459,7 +459,7 @@ cards = {
 		'cost': 1,
 		'power': 2,
 		'health': 1,
-		'text': 'ARRIVE: You may pay 2 {S} to deal 1 damage to an Animal. If that Animal is defeated, draw a card.',
+		'text': 'ARRIVE: You may pay 2 :paw_prints: to deal 1 damage to an Animal. If that Animal is defeated, draw a card.',
 		'img': None},
 	'explosive barrel': {
 		'name': 'Explosive Barrel',
@@ -469,7 +469,7 @@ cards = {
 		'cost': 2,
 		'power': None,
 		'health': None,
-		'text': 'You may pay 3 {S} instead of paying this card\'s Power cost.\nYour opponent must deal 3 damage to Animals they control, divided as they wish.',
+		'text': 'You may pay 3 :paw_prints: instead of paying this card\'s Power cost.\nYour opponent must deal 3 damage to Animals they control, divided as they wish.',
 		'img': None},
 	'the hunting grounds': {
 		'name': 'The Hunting Grounds',
@@ -479,7 +479,7 @@ cards = {
 		'cost': None,
 		'power': None,
 		'health': 7,
-		'text': 'Pay 3 {S}: Deal 1 damage to an Animal. If this damage defeats that Animal, draw a card.',
+		'text': 'Pay 3 :paw_prints:: Deal 1 damage to an Animal. If this damage defeats that Animal, draw a card.',
 		'img': None},
 	'korinne the huntsman': {
 		'name': 'Korinne the Huntsman',
@@ -499,7 +499,7 @@ cards = {
 		'cost': 2,
 		'power': 2,
 		'health': 3,
-		'text': 'ARRIVE: You may pay 2 {S} to deal 1 damage to an Animal. If that defeats it, this gains 1 Fury.\nLAST WORDS: Deal 1 damage to a Stronghold',
+		'text': 'ARRIVE: You may pay 2 :paw_prints: to deal 1 damage to an Animal. If that defeats it, this gains 1 Fury.\nLAST WORDS: Deal 1 damage to a Stronghold',
 		'img': None},
 	'jungle prowler': {
 		'name': 'Jungle Prowler',
@@ -519,7 +519,7 @@ cards = {
 		'cost': 1,
 		'power': None,
 		'health': None,
-		'text': 'Look at the top 2 cards of your deck, draw one and put the other on the bottom of your deck.\nYou may pay 3 {S} to draw both cards instead.',
+		'text': 'Look at the top 2 cards of your deck, draw one and put the other on the bottom of your deck.\nYou may pay 3 :paw_prints: to draw both cards instead.',
 		'img': None},
 	'heartpiercer arrow': {
 		'name': 'Heartpiercer Arrow',
@@ -539,7 +539,7 @@ cards = {
 		'cost': None,
 		'power': None,
 		'health': 7,
-		'text': 'Pay 3 {S}: Heal an Animal for 2 OR give an Animal +2 attack until the end of your turn.',
+		'text': 'Pay 3 :paw_prints:: Heal an Animal for 2 OR give an Animal +2 attack until the end of your turn.',
 		'img': None},
 	'professor noctus': {
 		'name': 'Professor Noctus',
@@ -579,7 +579,7 @@ cards = {
 		'cost': 1,
 		'power': None,
 		'health': None,
-		'text': 'Give an Animal +2 Attack until end of your turn.\nYou may pay 3 {S} to have that Animal also not take damage when attacking this turn.',
+		'text': 'Give an Animal +2 Attack until end of your turn.\nYou may pay 3 :paw_prints: to have that Animal also not take damage when attacking this turn.',
 		'img': None},
 	'lightning rod': {
 		'name': 'Lightning Rod',
@@ -589,6 +589,6 @@ cards = {
 		'cost': 2,
 		'power': None,
 		'health': None,
-		'text': 'Give 1 Fury to up to 2 friendly Animals.\nYou may pay 4 {S} to Exhaust up to 2 enemy Animals.',
+		'text': 'Give 1 Fury to up to 2 friendly Animals.\nYou may pay 4 :paw_prints: to Exhaust up to 2 enemy Animals.',
 		'img': None}}
         
